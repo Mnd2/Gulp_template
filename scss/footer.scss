@@ -17,16 +17,30 @@ footer {
                 justify-content: center;
                 list-style-type: circle;
                 list-style-position: initial;
+                
                 a{
                     margin: 0 10px;
                     text-decoration: none;
                     color: $footer-a-color;
                     
+                    
                     li {
                         display: list-item;
                         text-align: center;
-                        margin: 3px;
+                        position: relative;
                         list-style: none;
+
+                        &::before {
+                            display: inline-block;
+                            content: '';
+                            width: 2px;
+                            height: 1px;
+                            background-color: black;
+                            position: absolute;
+                            top: 50%;
+                            left: -11px;
+                            transform: translateY(-50%);
+                        }                        
                     }
                 }
             }
@@ -41,10 +55,15 @@ footer {
         .socials {
             display: flex;
             i {
+                align-items: center;
+                text-align: center;
                 color: $icon-color;
                 font-size: 25px;
-                margin: 15px;
-                transition: 0.2s;
+                width: 50px;
+                height: 50px;
+                margin: 10px 5px;
+                transition: 0.5s;
+                
 
                 &:hover {
                     align-items: center;
@@ -56,11 +75,10 @@ footer {
                     padding: 12px;
                     cursor: pointer;
                     background: $icon-color;
+                    transition-delay: 0.3s;
                 }
             }
         }
     }   
 }
-
-
 
