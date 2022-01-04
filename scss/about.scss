@@ -1,0 +1,54 @@
+.about {
+    display: flex;
+    flex-direction: column;
+
+    main {
+        display: flex;
+
+        section {
+            display: flex;
+            width: 100%;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10%;
+                width: 50%;
+
+                p {
+                color: $about-text-color;
+                }
+            }
+        }
+    }
+    img {
+        width: 50%;
+    }
+}
+
+main:nth-of-type(2) {
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (max-width: 800px) {
+    .about main section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+        &:nth-of-type(odd) {
+            flex-direction: column-reverse;
+        }
+
+        .text {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }   
+    }
+    
+}
