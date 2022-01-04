@@ -1,3 +1,5 @@
+
+
 footer {
     background: $footer-bg-color;
 
@@ -25,7 +27,7 @@ footer {
                     
                     
                     li {
-                        display: list-item;
+                        display: inline-block;
                         text-align: center;
                         position: relative;
                         list-style: none;
@@ -34,12 +36,15 @@ footer {
                             display: inline-block;
                             content: '';
                             width: 2px;
-                            height: 1px;
+                            height: 2px;
                             background-color: black;
                             position: absolute;
                             top: 50%;
-                            left: -11px;
-                            transform: translateY(-50%);
+                            left: -10px;
+                            
+                            &:first-of-type::before {
+                                                            
+                            }
                         }                        
                     }
                 }
@@ -49,8 +54,9 @@ footer {
                 margin-top: 10px;
                 display: flex;
                 color: $footer-text-color;
-            }
+            } 
         }
+        
     
         .socials {
             display: flex;
@@ -61,7 +67,7 @@ footer {
                 font-size: 25px;
                 width: 50px;
                 height: 50px;
-                margin: 10px 5px;
+                margin: 15px 5px;
                 transition: 0.5s;
                 
 
