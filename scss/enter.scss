@@ -25,16 +25,19 @@
 
         .signup {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
 
             .email {
-                width: 300px;
+                width: 20%;
                 border: none;
                 border-radius: 3px;
                 padding: 5px 15px;
                 margin-right: 10px;
             }
             .button {
+                width: 100%;
                 cursor: pointer;
                 color: white;
                 background: $btn-color;

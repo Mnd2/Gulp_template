@@ -13,12 +13,9 @@
 // top
 @media screen and (max-width: 800px) {
     .top div {
-        display: flex;
-    }
-    .top div h2 {
-        width: 100%;
-    }
-    .signup {
+            display: flex;
+
+        .signup {
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -28,11 +25,16 @@
             align-items: center;
             margin-bottom: 10px;
             padding: 5px 20px;
+            }
+
+            .button {
+                width: 100%;
+                align-items: center;
+                }
         }
-        .button {
-            width: 100%;
-            align-items: center;
-        }
+    }
+    .top div h2 {
+    width: 100%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -89,25 +91,28 @@
 @media screen and (max-width: 800px) {
     .enter div {
         display: flex;
-    }
-    .enter div h2 {
-        width: 100%;
-    }
+
     .signup {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        .email {
-            width: 100%;
-            align-items: center;
-            margin-bottom: 10px;
-            padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .email {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 5px 20px;
         }
+
         .button {
             width: 100%;
             align-items: center;
-        }
+            }
     }
+}
+.enter div h2 {
+width: 100%;
+}
 }
 
 @media screen and (max-width: 500px) {
