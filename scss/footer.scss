@@ -66,16 +66,4 @@ ul li::marker {
     font-size: 5px;
 }
 
-@media screen and (max-width: 800px) {
-    .privacy {
-        flex-direction: column;
-        align-items: center;
-        main {
-            text-align: center;
-        }
-        p {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-}
+
